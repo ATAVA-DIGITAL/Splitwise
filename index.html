@@ -3,9 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Room Splitwise Engine - ATAVA</title>
+    <title>Room Splitwise Engine - Powered by ATAVA</title>
+    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manjari:wght@400;700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
@@ -18,27 +21,37 @@
 </head>
 <body class="min-h-screen text-slate-100 flex flex-col justify-between">
 
+    <!-- Navbar with Power Brands Powered by ATAVA -->
     <header class="bg-slate-900/90 backdrop-blur-md border-b border-indigo-500/20 py-4 px-6 sticky top-0 z-50 shadow-lg">
         <div class="max-w-6xl mx-auto flex items-center justify-between">
             <div class="flex items-center gap-3">
-                <div class="bg-indigo-500 text-white p-2 rounded-xl shadow-md">
+                <div class="bg-gradient-to-tr from-amber-500 to-indigo-600 text-white p-2.5 rounded-xl shadow-md flex items-center justify-center">
                     <i class="fa-solid fa-wallet text-lg"></i>
                 </div>
                 <div>
-                    <h1 class="text-base font-bold text-white tracking-wide">ROOM SPLITWISE ENGINE</h1>
-                    <p class="text-[10px] text-indigo-400 font-medium">Smart Expense & Settlement Tracker</p>
+                    <h1 class="text-base font-bold text-white tracking-wide flex items-center gap-2">
+                        ROOM SPLITWISE ENGINE 
+                        <span class="bg-indigo-500/20 text-indigo-400 text-[10px] px-2 py-0.5 rounded-md border border-indigo-500/30 font-bold">v2.0</span>
+                    </h1>
+                    <!-- 🚀 MAIN BRANDING MECHAM ADDED HERE -->
+                    <p class="text-[11px] font-bold tracking-wider text-amber-400 flex items-center gap-1">
+                        <i class="fa-solid fa-charging-station text-[9px]"></i> POWERED BY ATAVA DIGITAL SERVICES & TRADING
+                    </p>
                 </div>
             </div>
             <span class="text-xs font-semibold bg-slate-800 border border-slate-700 px-3 py-1 rounded-full text-indigo-300">
-                <i class="fa-solid fa-circle text-[8px] text-emerald-500 mr-1 animate-pulse"></i> Live Analytics
+                <i class="fa-solid fa-circle text-[8px] text-emerald-500 mr-1 animate-pulse"></i> Active Sandbox
             </span>
         </div>
     </header>
 
+    <!-- Main Content Grid -->
     <main class="max-w-6xl mx-auto p-4 md:p-6 grid grid-cols-1 lg:grid-cols-12 gap-6 w-full flex-grow">
         
+        <!-- Left Column: Add Members & Expenses -->
         <div class="lg:col-span-5 space-y-6">
             
+            <!-- Section 1: Add Room Members -->
             <div class="bg-slate-900/80 border border-slate-800 p-5 rounded-3xl shadow-xl space-y-3">
                 <h2 class="text-sm font-bold text-indigo-400 flex items-center gap-2 border-b border-slate-800 pb-2">
                     <i class="fa-solid fa-users"></i> റൂം മെമ്പർമാരെ ചേർക്കുക (Room Members)
@@ -49,9 +62,11 @@
                         <i class="fa-solid fa-plus"></i> ആഡ്
                     </button>
                 </div>
+                <!-- Dynamic Members Chips list -->
                 <div id="membersList" class="flex flex-wrap gap-2 pt-1"></div>
             </div>
 
+            <!-- Section 2: Add New Expense -->
             <div class="bg-slate-900/80 border border-slate-800 p-5 rounded-3xl shadow-xl space-y-3">
                 <h2 class="text-sm font-bold text-indigo-400 flex items-center gap-2 border-b border-slate-800 pb-2">
                     <i class="fa-solid fa-cart-plus"></i> പുതിയ ചിലവുകൾ ചേർക്കുക (Add Expense)
@@ -93,8 +108,10 @@
 
         </div>
 
+        <!-- Right Column: Dashboard, Settlements & History -->
         <div class="lg:col-span-7 space-y-6">
             
+            <!-- Dashboard Cards Matrix -->
             <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
                 <div class="bg-slate-900 border border-slate-800 p-4 rounded-2xl shadow-md flex items-center justify-between">
                     <div>
@@ -112,13 +129,14 @@
                 </div>
                 <div class="bg-slate-900 border border-slate-800 p-4 rounded-2xl shadow-md flex items-center justify-between">
                     <div>
-                        <p class="text-[10px] text-slate-400 font-bold uppercase tracking-wider">ഒരാളുടെ ഷെയർ</p>
+                        <p class="text-[10px] text-slate-400 font-bold uppercase tracking-wider"> can ഒാരാളുടെ ഷെയർ</p>
                         <h3 id="dashPerHead" class="text-xl font-bold text-emerald-400 mt-1">₹0</h3>
                     </div>
                     <i class="fa-solid fa-hand-holding-dollar text-2xl text-emerald-400"></i>
                 </div>
             </div>
 
+            <!-- Settlement Smart Board -->
             <div class="bg-slate-900/80 border border-slate-800 p-5 rounded-3xl shadow-xl space-y-3">
                 <h2 class="text-sm font-bold text-emerald-400 flex items-center gap-2 border-b border-slate-800 pb-2">
                     <i class="fa-solid fa-scale-balanced"></i> ആര് ആർക്ക് കൊടുക്കണം? (Settlement Board)
@@ -128,6 +146,7 @@
                 </div>
             </div>
 
+            <!-- Expense History Log -->
             <div class="bg-slate-900/80 border border-slate-800 p-5 rounded-3xl shadow-xl space-y-3">
                 <div class="flex justify-between items-center border-b border-slate-800 pb-2">
                     <h2 class="text-sm font-bold text-indigo-400 flex items-center gap-2">
@@ -138,6 +157,7 @@
                     </button>
                 </div>
 
+                <!-- History Table Wrapper -->
                 <div class="overflow-x-auto max-h-[300px] overflow-y-auto">
                     <table class="w-full text-left text-xs text-slate-300">
                         <thead class="bg-slate-950 text-[10px] uppercase text-slate-400 tracking-wider sticky top-0">
@@ -150,7 +170,8 @@
                             </tr>
                         </thead>
                         <tbody id="historyTableBody">
-                            </tbody>
+                            <!-- Dynamic rows inside here -->
+                        </tbody>
                     </table>
                 </div>
             </div>
@@ -158,24 +179,21 @@
         </div>
     </main>
 
+    <!-- Footer Branding -->
     <footer class="bg-slate-950 border-t border-slate-900 text-center py-4 px-4 text-xs text-slate-500 flex flex-col sm:flex-row items-center justify-between gap-2">
         <p>Engine Architecture Matrix Configured by <strong class="text-slate-400">ATAVA DIGITAL SERVICES & TRADING</strong></p>
         <p class="text-indigo-500 font-medium"><i class="fa-solid fa-shield-halved"></i> LocalStorage Secure Sandbox Active</p>
     </footer>
 
+    <!-- Logic Engine Processing Scripts -->
     <script>
-        // System Data Containers State
         let roomData = {
             members: [],
             expenses: []
         };
 
-        // Initialize Application Core Lifecycle
         document.addEventListener('DOMContentLoaded', () => {
-            // Set Default System Date Input field to current timezone date
             document.getElementById('expDate').value = new Date().toISOString().split('T')[0];
-            
-            // Load from LocalStorage if history block exists
             const localRaw = localStorage.getItem('atava_splitwise_data');
             if (localRaw) {
                 roomData = JSON.parse(localRaw);
@@ -230,9 +248,8 @@
                 paidBy: paidBy
             };
 
-            roomData.expenses.unshift(expenseNode); // Add newest to top
+            roomData.expenses.unshift(expenseNode); 
             
-            // Clear inputs safe state reset
             document.getElementById('expName').value = '';
             document.getElementById('expAmount').value = '';
             document.getElementById('expShop').value = '';
@@ -250,7 +267,6 @@
         }
 
         function renderAll() {
-            // 1. Render Member Chips
             const mListContainer = document.getElementById('membersList');
             mListContainer.innerHTML = '';
             roomData.members.forEach(member => {
@@ -262,17 +278,15 @@
                 `;
             });
 
-            // 2. Render Paid By Select Dropdown
             const selectPaid = document.getElementById('expPaidBy');
             selectPaid.innerHTML = '<option value="" disabled selected>ആരാണ് പേ ചെയ്തത് എന്ന് തിരഞ്ഞെടുക്കുക</option>';
             roomData.members.forEach(member => {
                 selectPaid.innerHTML += `<option value="${member}">${member}</option>`;
             });
 
-            // 3. Process Calculations Matrix & Render History
             let totalAll = 0;
             let totalThisMonth = 0;
-            const currentMonthStr = new Date().toISOString().substring(0, 7); // YYYY-MM
+            const currentMonthStr = new Date().toISOString().substring(0, 7); 
             
             const tableBody = document.getElementById('historyTableBody');
             tableBody.innerHTML = '';
@@ -281,7 +295,6 @@
                 tableBody.innerHTML = `<tr><td colspan="5" class="p-4 text-center text-slate-500 italic text-[11px]">ചിലവുകൾ ഒന്നും ആഡ് ചെയ്തിട്ടില്ല.</td></tr>`;
             }
 
-            // Tracking balance matrices for settlement processing
             let balances = {};
             roomData.members.forEach(m => balances[m] = 0);
 
@@ -291,7 +304,6 @@
                     totalThisMonth += exp.amount;
                 }
 
-                // Render dynamic history row structure
                 tableBody.innerHTML += `
                     <tr class="border-b border-slate-800/60 hover:bg-slate-900/40">
                         <td class="p-2.5 font-medium whitespace-nowrap text-slate-400">${exp.date}</td>
@@ -302,7 +314,6 @@
                     </tr>
                 `;
 
-                // Calculate split matrix slices
                 if (roomData.members.length > 0) {
                     let share = exp.amount / roomData.members.length;
                     roomData.members.forEach(m => {
@@ -314,14 +325,12 @@
                 }
             });
 
-            // Update Dash Matrix labels
             document.getElementById('dashTotal').innerText = `₹${totalAll.toFixed(0)}`;
             document.getElementById('dashMonthTotal').innerText = `₹${totalThisMonth.toFixed(0)}`;
             
             const perHead = roomData.members.length > 0 ? (totalAll / roomData.members.length) : 0;
             document.getElementById('dashPerHead').innerText = `₹${perHead.toFixed(0)}`;
 
-            // 4. Compute Clean Settlement Operations
             const settlementContainer = document.getElementById('settlementList');
             settlementContainer.innerHTML = '';
 
@@ -330,7 +339,6 @@
                 return;
             }
 
-            // Map balances array into structural creditors and debtors matrix sheets
             let debtors = [];
             let creditors = [];
 
