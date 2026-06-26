@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Room Splitwise Engine - Powered by ATAVA</title>
+    <title>ATAVA Companion Split - Universal Multi-Group Billing Engine</title>
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- FontAwesome Icons -->
@@ -15,163 +15,167 @@
     <style>
         body {
             font-family: 'Poppins', 'Manjari', sans-serif;
-            background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 100%);
+            background-color: #f8fafc; /* Clean Slate White Background */
         }
     </style>
 </head>
-<body class="min-h-screen text-slate-100 flex flex-col justify-between">
+<body class="min-h-screen text-slate-800 flex flex-col justify-between">
 
-    <!-- Navbar with Power Brands Powered by ATAVA -->
-    <header class="bg-slate-900/90 backdrop-blur-md border-b border-indigo-500/20 py-4 px-6 sticky top-0 z-50 shadow-lg">
+    <!-- Header Frame with ATAVA Corporate Branding -->
+    <header class="bg-white border-b border-slate-200 py-4 px-6 sticky top-0 z-50 shadow-sm">
         <div class="max-w-6xl mx-auto flex items-center justify-between">
             <div class="flex items-center gap-3">
-                <div class="bg-gradient-to-tr from-amber-500 to-indigo-600 text-white p-2.5 rounded-xl shadow-md flex items-center justify-center">
-                    <i class="fa-solid fa-wallet text-lg"></i>
+                <div class="bg-gradient-to-tr from-amber-500 via-indigo-600 to-emerald-600 text-white p-2.5 rounded-2xl shadow-md flex items-center justify-center">
+                    <i class="fa-solid fa-layer-group text-lg"></i>
                 </div>
                 <div>
-                    <h1 class="text-base font-bold text-white tracking-wide flex items-center gap-2">
-                        ROOM SPLITWISE ENGINE 
-                        <span class="bg-indigo-500/20 text-indigo-400 text-[10px] px-2 py-0.5 rounded-md border border-indigo-500/30 font-bold">v2.0</span>
+                    <h1 class="text-base font-bold text-slate-900 tracking-wide flex items-center gap-2">
+                        ATAVA COMPANION SPLIT
+                        <span class="bg-amber-100 text-amber-800 text-[9px] px-1.5 py-0.5 rounded border border-amber-200 font-bold uppercase tracking-wider">Universal Edition</span>
                     </h1>
-                    <!-- 🚀 MAIN BRANDING MECHAM ADDED HERE -->
-                    <p class="text-[11px] font-bold tracking-wider text-amber-400 flex items-center gap-1">
-                        <i class="fa-solid fa-charging-station text-[9px]"></i> POWERED BY ATAVA DIGITAL SERVICES & TRADING
+                    <!-- Main Brand Value Booster -->
+                    <p class="text-[11px] font-bold tracking-wider text-slate-500 flex items-center gap-1">
+                        POWERED BY <span class="text-indigo-600">ATAVA DIGITAL SERVICES & TRADING</span>
                     </p>
                 </div>
             </div>
-            <span class="text-xs font-semibold bg-slate-800 border border-slate-700 px-3 py-1 rounded-full text-indigo-300">
-                <i class="fa-solid fa-circle text-[8px] text-emerald-500 mr-1 animate-pulse"></i> Active Sandbox
+            <span class="text-[10px] font-bold bg-slate-100 border border-slate-200 px-3 py-1 rounded-full text-slate-600 tracking-wide uppercase">
+                <i class="fa-solid fa-shield-halved text-[8px] text-emerald-500 mr-1"></i> Multi-Use Mode
             </span>
         </div>
     </header>
 
-    <!-- Main Content Grid -->
+    <!-- Main Workspace Dashboard Grid -->
     <main class="max-w-6xl mx-auto p-4 md:p-6 grid grid-cols-1 lg:grid-cols-12 gap-6 w-full flex-grow">
         
-        <!-- Left Column: Add Members & Expenses -->
+        <!-- Left Processing Panel -->
         <div class="lg:col-span-5 space-y-6">
             
-            <!-- Section 1: Add Room Members -->
-            <div class="bg-slate-900/80 border border-slate-800 p-5 rounded-3xl shadow-xl space-y-3">
-                <h2 class="text-sm font-bold text-indigo-400 flex items-center gap-2 border-b border-slate-800 pb-2">
-                    <i class="fa-solid fa-users"></i> റൂം മെമ്പർമാരെ ചേർക്കുക (Room Members)
-                </h2>
+            <!-- Universal Member Pool Allocation -->
+            <div class="bg-white border border-slate-200 p-5 rounded-3xl shadow-sm space-y-3">
+                <div class="border-b border-slate-100 pb-2">
+                    <h2 class="text-sm font-bold text-indigo-600 flex items-center gap-2">
+                        <i class="fa-solid fa-user-plus text-xs"></i> ഗ്രൂപ്പ് മെമ്പർമാരെ ചേർക്കുക (Add Members)
+                    </h2>
+                    <p class="text-[10px] text-slate-400 mt-0.5">റൂം കൂട്ടുകാർ, യാത്രാസംഘം, ബിസിനസ്സ് പാർട്ണേഴ്സ് എന്നിവരുടെ പേരുകൾ ഇവിടെ നൽകാം.</p>
+                </div>
                 <div class="flex gap-2">
-                    <input type="text" id="memberName" placeholder="eg: അലി, ഷാഫി..." class="flex-grow bg-slate-950 border border-slate-700 rounded-xl px-3 py-2 text-xs font-medium outline-none focus:border-indigo-500 text-white">
-                    <button onclick="addMember()" class="bg-indigo-600 hover:bg-indigo-500 text-white font-bold px-4 py-2 rounded-xl text-xs transition-all shadow-md">
-                        <i class="fa-solid fa-plus"></i> ആഡ്
+                    <input type="text" id="memberName" placeholder="eg: അലി, ഷാഫി, രാഹുൽ..." class="flex-grow bg-slate-50 border border-slate-200 rounded-xl px-3 py-2 text-xs font-medium outline-none focus:border-indigo-500 text-slate-900">
+                    <button onclick="addMember()" class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold px-4 py-2 rounded-xl text-xs transition-all shadow-sm">
+                        <i class="fa-solid fa-plus"></i> ചേർക്കുക
                     </button>
                 </div>
-                <!-- Dynamic Members Chips list -->
+                <!-- Dynamic Tags output -->
                 <div id="membersList" class="flex flex-wrap gap-2 pt-1"></div>
             </div>
 
-            <!-- Section 2: Add New Expense -->
-            <div class="bg-slate-900/80 border border-slate-800 p-5 rounded-3xl shadow-xl space-y-3">
-                <h2 class="text-sm font-bold text-indigo-400 flex items-center gap-2 border-b border-slate-800 pb-2">
-                    <i class="fa-solid fa-cart-plus"></i> പുതിയ ചിലവുകൾ ചേർക്കുക (Add Expense)
-                </h2>
+            <!-- Universal Ledger Input Entry Form -->
+            <div class="bg-white border border-slate-200 p-5 rounded-3xl shadow-sm space-y-3">
+                <div class="border-b border-slate-100 pb-2">
+                    <h2 class="text-sm font-bold text-indigo-600 flex items-center gap-2">
+                        <i class="fa-solid fa-receipt text-xs"></i> പുതിയ ചിലവുകൾ രേഖപ്പെടുത്താം (Add Bill / Expense)
+                    </h2>
+                    <p class="text-[10px] text-slate-400 mt-0.5">ഭക്ഷണം, റൂം വാടക, യാത്രാ ചിലവുകൾ, പർച്ചേസുകൾ എന്നിവ അപ്പപ്പോൾ അപ്‌ഡേറ്റ് ചെയ്യാം.</p>
+                </div>
                 
                 <div class="space-y-3">
                     <div class="grid grid-cols-2 gap-2">
                         <div>
-                            <label class="block text-[11px] font-semibold text-slate-400 mb-1">സാധനത്തിന്റെ പേര്</label>
-                            <input type="text" id="expName" placeholder="eg: മിൽക്ക്, ചിക്കൻ" class="w-full bg-slate-950 border border-slate-700 rounded-xl px-3 py-2 text-xs font-medium outline-none focus:border-indigo-500 text-white">
+                            <label class="block text-[11px] font-semibold text-slate-500 mb-1">എന്താണ് വാങ്ങിയത്? (Item Name)</label>
+                            <input type="text" id="expName" placeholder="eg: പെട്രോൾ, ഡിന്നർ, വാടക" class="w-full bg-slate-50 border border-slate-200 rounded-xl px-3 py-2 text-xs font-medium outline-none focus:border-indigo-500 text-slate-900">
                         </div>
                         <div>
-                            <label class="block text-[11px] font-semibold text-slate-400 mb-1">വില (Rate/Amount)</label>
-                            <input type="number" id="expAmount" placeholder="₹ 0.00" class="w-full bg-slate-950 border border-slate-700 rounded-xl px-3 py-2 text-xs font-medium outline-none focus:border-indigo-500 text-white">
+                            <label class="block text-[11px] font-semibold text-slate-500 mb-1">ആകെ തുക (Total Bill Rate)</label>
+                            <input type="number" id="expAmount" placeholder="0.00" class="w-full bg-slate-50 border border-slate-200 rounded-xl px-3 py-2 text-xs font-medium outline-none focus:border-indigo-500 text-slate-900">
                         </div>
                     </div>
 
                     <div class="grid grid-cols-2 gap-2">
                         <div>
-                            <label class="block text-[11px] font-semibold text-slate-400 mb-1">വാങ്ങിയ കട/സ്ഥലം (Shop)</label>
-                            <input type="text" id="expShop" placeholder="eg: ലുലു ഹൈപ്പർ" class="w-full bg-slate-950 border border-slate-700 rounded-xl px-3 py-2 text-xs font-medium outline-none focus:border-indigo-500 text-white">
+                            <label class="block text-[11px] font-semibold text-slate-500 mb-1">സ്ഥലം / കട (Shop/Place)</label>
+                            <input type="text" id="expShop" placeholder="eg: ലുലു ഹൈപ്പർ, ഹോട്ടൽ" class="w-full bg-slate-50 border border-slate-200 rounded-xl px-3 py-2 text-xs font-medium outline-none focus:border-indigo-500 text-slate-900">
                         </div>
                         <div>
-                            <label class="block text-[11px] font-semibold text-slate-400 mb-1">തീയതി (Date)</label>
-                            <input type="date" id="expDate" class="w-full bg-slate-950 border border-slate-700 rounded-xl px-3 py-2 text-xs font-medium outline-none focus:border-indigo-500 text-white">
+                            <label class="block text-[11px] font-semibold text-slate-500 mb-1">തീയതി (Date)</label>
+                            <input type="date" id="expDate" class="w-full bg-slate-50 border border-slate-200 rounded-xl px-3 py-2 text-xs font-medium outline-none focus:border-indigo-500 text-slate-900">
                         </div>
                     </div>
 
                     <div>
-                        <label class="block text-[11px] font-semibold text-slate-400 mb-1">കാശ് കൊടുത്തത് ആരാണ്? (Paid By)</label>
-                        <select id="expPaidBy" class="w-full bg-slate-950 border border-slate-700 rounded-xl px-3 py-2 text-xs font-medium outline-none focus:border-indigo-500 text-white"></select>
+                        <label class="block text-[11px] font-semibold text-slate-500 mb-1">ആരാണ് ഈ തുക അടച്ചത്? (Paid By)</label>
+                        <select id="expPaidBy" class="w-full bg-slate-50 border border-slate-200 rounded-xl px-3 py-2 text-xs font-medium outline-none focus:border-indigo-500 text-slate-900"></select>
                     </div>
 
-                    <button onclick="addExpense()" class="w-full bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-500 hover:to-teal-500 text-white font-bold py-2.5 px-4 rounded-xl text-xs flex items-center justify-center gap-2 shadow-md transition-all">
-                        <i class="fa-solid fa-check-double"></i> ചിലവ് സേവ് ചെയ്യുക (Save Expense)
+                    <button onclick="addExpense()" class="w-full bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-700 hover:to-teal-700 text-white font-bold py-2.5 px-4 rounded-xl text-xs flex items-center justify-center gap-2 shadow-sm transition-all">
+                        <i class="fa-solid fa-cloud-arrow-up"></i> ഡാറ്റ സേവ് ചെയ്യുക (Process Split)
                     </button>
                 </div>
             </div>
 
         </div>
 
-        <!-- Right Column: Dashboard, Settlements & History -->
+        <!-- Right Processing Analytics Board -->
         <div class="lg:col-span-7 space-y-6">
             
-            <!-- Dashboard Cards Matrix -->
+            <!-- Global Macro Counters -->
             <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-                <div class="bg-slate-900 border border-slate-800 p-4 rounded-2xl shadow-md flex items-center justify-between">
+                <div class="bg-white border border-slate-200 p-4 rounded-2xl shadow-sm flex items-center justify-between">
                     <div>
-                        <p class="text-[10px] text-slate-400 font-bold uppercase tracking-wider">ആകെ ചിലവ് (Total)</p>
-                        <h3 id="dashTotal" class="text-xl font-bold text-white mt-1">₹0</h3>
+                        <p class="text-[10px] text-slate-400 font-bold uppercase tracking-wider">ആകെ ചിലവ് (Grand Total)</p>
+                        <h3 id="dashTotal" class="text-xl font-bold text-slate-900 mt-1">₹0</h3>
                     </div>
-                    <i class="fa-solid fa-coins text-2xl text-amber-500"></i>
+                    <i class="fa-solid fa-calculator text-xl text-amber-500"></i>
                 </div>
-                <div class="bg-slate-900 border border-slate-800 p-4 rounded-2xl shadow-md flex items-center justify-between">
+                <div class="bg-white border border-slate-200 p-4 rounded-2xl shadow-sm flex items-center justify-between">
                     <div>
-                        <p class="text-[10px] text-slate-400 font-bold uppercase tracking-wider">ഈ മാസത്തെ ചിലവ്</p>
-                        <h3 id="dashMonthTotal" class="text-xl font-bold text-indigo-400 mt-1">₹0</h3>
+                        <p class="text-[10px] text-slate-400 font-bold uppercase tracking-wider">ഈ മാസത്തെ തുക</p>
+                        <h3 id="dashMonthTotal" class="text-xl font-bold text-indigo-600 mt-1">₹0</h3>
                     </div>
-                    <i class="fa-solid fa-calendar-days text-2xl text-indigo-400"></i>
+                    <i class="fa-solid fa-chart-line text-xl text-indigo-600"></i>
                 </div>
-                <div class="bg-slate-900 border border-slate-800 p-4 rounded-2xl shadow-md flex items-center justify-between">
+                <div class="bg-white border border-slate-200 p-4 rounded-2xl shadow-sm flex items-center justify-between">
                     <div>
-                        <p class="text-[10px] text-slate-400 font-bold uppercase tracking-wider"> can ഒാരാളുടെ ഷെയർ</p>
-                        <h3 id="dashPerHead" class="text-xl font-bold text-emerald-400 mt-1">₹0</h3>
+                        <p class="text-[10px] text-slate-400 font-bold uppercase tracking-wider">ഒരാളുടെ വിഹിതം</p>
+                        <h3 id="dashPerHead" class="text-xl font-bold text-emerald-600 mt-1">₹0</h3>
                     </div>
-                    <i class="fa-solid fa-hand-holding-dollar text-2xl text-emerald-400"></i>
+                    <i class="fa-solid fa-divide text-xl text-emerald-600"></i>
                 </div>
             </div>
 
-            <!-- Settlement Smart Board -->
-            <div class="bg-slate-900/80 border border-slate-800 p-5 rounded-3xl shadow-xl space-y-3">
-                <h2 class="text-sm font-bold text-emerald-400 flex items-center gap-2 border-b border-slate-800 pb-2">
-                    <i class="fa-solid fa-scale-balanced"></i> ആര് ആർക്ക് കൊടുക്കണം? (Settlement Board)
+            <!-- Intelligent Settlement Reconciliation Core Matrix -->
+            <div class="bg-white border border-slate-200 p-5 rounded-3xl shadow-sm space-y-3">
+                <h2 class="text-sm font-bold text-emerald-600 flex items-center gap-2 border-b border-slate-100 pb-2">
+                    <i class="fa-solid fa-arrows-turn-to-dots text-xs"></i> ക്ലിയറിങ് സ്റ്റേറ്റ്മെന്റ് (Smart Settlement Board)
                 </h2>
-                <div id="settlementList" class="space-y-2 text-xs font-medium text-slate-300">
-                    <p class="text-slate-500 italic text-[11px]">മെമ്പർമാരെയും ചിലവുകളെയും ആഡ് ചെയ്യുമ്പോൾ ഇവിടെ ലൈവായി മാട്രിക്സ് തെളിയും...</p>
+                <div id="settlementList" class="space-y-2 text-xs font-medium text-slate-700">
+                    <p class="text-slate-400 italic text-[11px]">മെമ്പർമാരെയും ബില്ലുകളെയും ആഡ് ചെയ്യുമ്പോൾ സെറ്റിൽമെന്റ് കണക്കുകൾ ഇവിടെ തനിയെ തെളിയും...</p>
                 </div>
             </div>
 
-            <!-- Expense History Log -->
-            <div class="bg-slate-900/80 border border-slate-800 p-5 rounded-3xl shadow-xl space-y-3">
-                <div class="flex justify-between items-center border-b border-slate-800 pb-2">
-                    <h2 class="text-sm font-bold text-indigo-400 flex items-center gap-2">
-                        <i class="fa-solid fa-history"></i> ചിലവുകളുടെ ഹിസ്റ്ററി (Expense History Log)
+            <!-- Global Archival Audit Log -->
+            <div class="bg-white border border-slate-200 p-5 rounded-3xl shadow-sm space-y-3">
+                <div class="flex justify-between items-center border-b border-slate-100 pb-2">
+                    <h2 class="text-sm font-bold text-indigo-600 flex items-center gap-2">
+                        <i class="fa-solid fa-box-archive text-xs"></i> ചിലവുകളുടെ പഴയ ഹിസ്റ്ററി (Global Audit History)
                     </h2>
-                    <button onclick="clearAllData()" class="text-[10px] text-rose-400 hover:text-rose-300 font-bold">
-                        <i class="fa-solid fa-trash-can"></i> ഡാറ്റ ക്ലിയർ ചെയ്യുക
+                    <button onclick="clearAllData()" class="text-[10px] text-rose-600 hover:text-rose-700 font-bold flex items-center gap-1">
+                        <i class="fa-solid fa-trash-can text-[9px]"></i> Reset Board
                     </button>
                 </div>
 
-                <!-- History Table Wrapper -->
+                <!-- Scrollable Viewport Frame -->
                 <div class="overflow-x-auto max-h-[300px] overflow-y-auto">
-                    <table class="w-full text-left text-xs text-slate-300">
-                        <thead class="bg-slate-950 text-[10px] uppercase text-slate-400 tracking-wider sticky top-0">
+                    <table class="w-full text-left text-xs text-slate-700">
+                        <thead class="bg-slate-100 text-[10px] uppercase text-slate-500 tracking-wider sticky top-0">
                             <tr>
                                 <th class="p-2.5">തീയതി</th>
-                                <th class="p-2.5">സാധനം</th>
+                                <th class="p-2.5">സാധനം/വിവരം</th>
                                 <th class="p-2.5">കട/സ്ഥലം</th>
                                 <th class="p-2.5">Paid By</th>
-                                <th class="p-2.5 text-right">വില</th>
+                                <th class="p-2.5 text-right">തുക</th>
                             </tr>
                         </thead>
-                        <tbody id="historyTableBody">
-                            <!-- Dynamic rows inside here -->
-                        </tbody>
+                        <tbody id="historyTableBody" class="divide-y divide-slate-100"></tbody>
                     </table>
                 </div>
             </div>
@@ -179,13 +183,13 @@
         </div>
     </main>
 
-    <!-- Footer Branding -->
-    <footer class="bg-slate-950 border-t border-slate-900 text-center py-4 px-4 text-xs text-slate-500 flex flex-col sm:flex-row items-center justify-between gap-2">
-        <p>Engine Architecture Matrix Configured by <strong class="text-slate-400">ATAVA DIGITAL SERVICES & TRADING</strong></p>
-        <p class="text-indigo-500 font-medium"><i class="fa-solid fa-shield-halved"></i> LocalStorage Secure Sandbox Active</p>
+    <!-- Global Corporate Footer Node -->
+    <footer class="bg-slate-900 text-slate-400 text-center py-4 px-4 text-xs flex flex-col sm:flex-row items-center justify-between gap-2">
+        <p>Engine Architecture Managed by <strong class="text-white">ATAVA DIGITAL SERVICES & TRADING</strong></p>
+        <p class="text-indigo-400 font-medium"><i class="fa-solid fa-fingerprint text-[10px]"></i> Secure Data Ledger Environment Active</p>
     </footer>
 
-    <!-- Logic Engine Processing Scripts -->
+    <!-- Universal Processing Script Logics -->
     <script>
         let roomData = {
             members: [],
@@ -194,7 +198,7 @@
 
         document.addEventListener('DOMContentLoaded', () => {
             document.getElementById('expDate').value = new Date().toISOString().split('T')[0];
-            const localRaw = localStorage.getItem('atava_splitwise_data');
+            const localRaw = localStorage.getItem('atava_universal_split_data');
             if (localRaw) {
                 roomData = JSON.parse(localRaw);
             }
@@ -202,7 +206,7 @@
         });
 
         function saveData() {
-            localStorage.setItem('atava_splitwise_data', JSON.stringify(roomData));
+            localStorage.setItem('atava_universal_split_data', JSON.stringify(roomData));
         }
 
         function addMember() {
@@ -211,7 +215,7 @@
             
             if (!name) return;
             if (roomData.members.includes(name)) {
-                alert("ഈ പേര് നിലവിലുണ്ട്!");
+                alert("ഈ പേര് ഇതിനകം ലിസ്റ്റിൽ ചേർത്തിട്ടുണ്ട്!");
                 return;
             }
 
@@ -259,7 +263,7 @@
         }
 
         function clearAllData() {
-            if(confirm("കണക്കുകളെല്ലാം മായ്ക്കണം എന്ന് ഉറപ്പാണോ? ഇത് തിരിച്ചു പിടിക്കാൻ കഴിയില്ല!")) {
+            if(confirm("ഈ ലെഡ്ജറിലെ എല്ലാ ഗ്രൂപ്പ് ഡാറ്റയും കണക്കുകളും പൂർണ്ണമായി മായ്ക്കണം എന്ന് ഉറപ്പാണോ?")) {
                 roomData = { members: [], expenses: [] };
                 saveData();
                 renderAll();
@@ -271,15 +275,15 @@
             mListContainer.innerHTML = '';
             roomData.members.forEach(member => {
                 mListContainer.innerHTML += `
-                    <span class="inline-flex items-center gap-1.5 bg-slate-800 text-indigo-300 text-xs px-3 py-1.5 rounded-xl border border-slate-700 font-medium">
-                        ${member}
-                        <button onclick="removeMember('${member}')" class="text-rose-400 hover:text-rose-300 text-[10px] ml-0.5"><i class="fa-solid fa-xmark"></i></button>
+                    <span class="inline-flex items-center gap-1.5 bg-slate-100 text-slate-700 text-xs px-2.5 py-1.5 rounded-xl border border-slate-200 font-medium shadow-sm">
+                        <i class="fa-solid fa-user text-[9px] text-slate-400"></i> ${member}
+                        <button onclick="removeMember('${member}')" class="text-rose-500 hover:text-rose-700 text-[9px] ml-1"><i class="fa-solid fa-xmark"></i></button>
                     </span>
                 `;
             });
 
             const selectPaid = document.getElementById('expPaidBy');
-            selectPaid.innerHTML = '<option value="" disabled selected>ആരാണ് പേ ചെയ്തത് എന്ന് തിരഞ്ഞെടുക്കുക</option>';
+            selectPaid.innerHTML = '<option value="" disabled selected>തുക നൽകിയ ആളെ തിരഞ്ഞെടുക്കുക</option>';
             roomData.members.forEach(member => {
                 selectPaid.innerHTML += `<option value="${member}">${member}</option>`;
             });
@@ -292,7 +296,7 @@
             tableBody.innerHTML = '';
 
             if (roomData.expenses.length === 0) {
-                tableBody.innerHTML = `<tr><td colspan="5" class="p-4 text-center text-slate-500 italic text-[11px]">ചിലവുകൾ ഒന്നും ആഡ് ചെയ്തിട്ടില്ല.</td></tr>`;
+                tableBody.innerHTML = `<tr><td colspan="5" class="p-4 text-center text-slate-400 italic text-[11px]">ബില്ലുകൾ ഒന്നും രേഖപ്പെടുത്തിയിട്ടില്ല.</td></tr>`;
             }
 
             let balances = {};
@@ -305,12 +309,12 @@
                 }
 
                 tableBody.innerHTML += `
-                    <tr class="border-b border-slate-800/60 hover:bg-slate-900/40">
-                        <td class="p-2.5 font-medium whitespace-nowrap text-slate-400">${exp.date}</td>
-                        <td class="p-2.5 font-bold text-slate-200">${exp.name}</td>
-                        <td class="p-2.5 text-slate-400">${exp.shop}</td>
-                        <td class="p-2.5"><span class="bg-slate-800 px-2 py-0.5 rounded text-[11px] font-bold text-indigo-400">${exp.paidBy}</span></td>
-                        <td class="p-2.5 text-right font-bold text-emerald-400">₹${exp.amount.toFixed(2)}</td>
+                    <tr class="hover:bg-slate-50">
+                        <td class="p-2.5 font-medium text-slate-500">${exp.date}</td>
+                        <td class="p-2.5 font-bold text-slate-800">${exp.name}</td>
+                        <td class="p-2.5 text-slate-500">${exp.shop}</td>
+                        <td class="p-2.5"><span class="bg-indigo-50 text-indigo-700 border border-indigo-100 px-2.5 py-1 rounded-lg text-[11px] font-bold">${exp.paidBy}</span></td>
+                        <td class="p-2.5 text-right font-bold text-emerald-600">₹${exp.amount.toFixed(2)}</td>
                     </tr>
                 `;
 
@@ -335,7 +339,7 @@
             settlementContainer.innerHTML = '';
 
             if (roomData.members.length < 2) {
-                settlementContainer.innerHTML = `<p class="text-slate-500 italic text-[11px]"><i class="fa-solid fa-circle-info"></i> കണക്കുകൾ തിരിയാൻ കുറഞ്ഞത് രണ്ട് മെമ്പർമാരെ എങ്കിലും ആഡ് ചെയ്യുക.</p>`;
+                settlementContainer.innerHTML = `<p class="text-slate-400 italic text-[11px]"><i class="fa-solid fa-circle-info"></i> സെറ്റിൽമെന്റ് കണക്കുകൾ ആക്റ്റീവ് ആകാൻ കുറഞ്ഞത് 2 മെമ്പർമാരെ ആഡ് ചെയ്യുക.</p>`;
                 return;
             }
 
@@ -359,13 +363,13 @@
 
                 let settlementAmount = Math.min(debtor.amount, creditor.amount);
                 settlementLogs.push(`
-                    <div class="flex items-center justify-between bg-slate-950 p-2.5 rounded-xl border border-slate-800/80">
-                        <div class="flex items-center gap-2">
-                            <span class="text-rose-400 font-bold">${debtor.name}</span>
-                            <i class="fa-solid fa-arrow-right text-slate-600 text-[10px]"></i>
-                            <span class="text-emerald-400 font-bold">${creditor.name}</span> നു നൽകണം
+                    <div class="flex items-center justify-between bg-slate-50 p-3 rounded-xl border border-slate-200">
+                        <div class="flex items-center gap-2 text-slate-700">
+                            <span class="text-rose-600 font-bold">${debtor.name}</span>
+                            <i class="fa-solid fa-arrow-right text-slate-400 text-[10px]"></i>
+                            <span class="text-emerald-600 font-bold">${creditor.name}</span> നു നൽകാൻ ഉണ്ട്
                         </div>
-                        <div class="text-amber-400 font-bold text-sm">₹${settlementAmount.toFixed(2)}</div>
+                        <div class="text-amber-600 font-bold text-sm">₹${settlementAmount.toFixed(2)}</div>
                     </div>
                 `);
 
@@ -377,7 +381,7 @@
             }
 
             if (settlementLogs.length === 0) {
-                settlementContainer.innerHTML = `<p class="text-emerald-500 font-medium text-center py-2"><i class="fa-solid fa-square-check"></i> റൂമിലെ എല്ലാ കണക്കുകളും നിലവിൽ പക്കാ സെറ്റിൽഡ് ആണ്!</p>`;
+                settlementContainer.innerHTML = `<p class="text-emerald-600 font-medium text-center py-2"><i class="fa-solid fa-square-check"></i> എല്ലാ ഗ്രൂപ്പ് കണക്കുകളും നിലവിൽ 100% സെറ്റിൽഡ് ആണ്!</p>`;
             } else {
                 settlementLogs.forEach(logHtml => {
                     settlementContainer.innerHTML += logHtml;
