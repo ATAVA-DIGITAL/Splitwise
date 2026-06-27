@@ -305,7 +305,7 @@
             roomData.members.forEach(member => {
                 container.innerHTML += `
                     <div class="flex items-center justify-between gap-2 bg-white p-2 rounded-xl border border-slate-200">
-                        <span class="text-xs font-semibold text-slate-700"><i class="fa-solid fa-user text-[10px] text-slate-400 mr-1"></i>${member}</span>
+                        <span class="xs font-semibold text-slate-700"><i class="fa-solid fa-user text-[10px] text-slate-400 mr-1"></i>${member}</span>
                         <div class="flex items-center gap-1">
                             <span class="text-xs text-slate-400">₹</span>
                             <input type="number" data-member="${member}" value="${defaultShare}" class="custom-shares w-20 bg-slate-50 border border-slate-200 rounded-lg px-2 py-0.5 text-xs font-bold text-right outline-none focus:border-indigo-500 text-slate-900">
@@ -349,7 +349,6 @@
                     totalInputCustom += mVal;
                 });
 
-                // Validation to make sure individual shares equal total bill
                 if (Math.abs(totalInputCustom - amount) > 0.5) {
                     alert(`കണക്കിൽ ചെറിയ വ്യത്യാസമുണ്ട്! ആകെ ബിൽ തുക ₹${amount} ആണ്. എന്നാൽ നിങ്ങൾ വ്യക്തിഗതമായി ചേർത്ത തുകകളുടെ ആകെ തുക ₹${totalInputCustom.toFixed(2)} ആണ്. ഇത് തുല്യമാകണം.`);
                     return;
@@ -373,7 +372,7 @@
             document.getElementById('expAmount').value = '';
             document.getElementById('expShop').value = '';
             document.getElementById('splitType').value = 'equal';
-            document.getElementById('customSplitMatrix').add('hidden');
+            document.getElementById('customSplitMatrix').classList.add('hidden'); // FIXED BUG HERE!
             
             saveData();
             renderAll();
@@ -433,7 +432,7 @@
                     <tr class="hover:bg-slate-50">
                         <td class="p-2.5 font-medium text-slate-500">${exp.date}</td>
                         <td class="p-2.5 font-bold text-slate-800">${exp.name} <div class="text-[10px] text-slate-400 font-normal">at ${exp.shop}</div></td>
-                        <td class="p-2.5"><span class="bg-indigo-50 text-indigo-700 border border-indigo-100 px-2 py-0.5 rounded-lg text-[11px] font-bold">${exp.paidBy}</span></td>
+                        <td class="p-2.5"><span class="bg-indigo-50 text-indigo-700 border border-indigo-100 px-2.5 py-1 rounded-lg text-[11px] font-bold">${exp.paidBy}</span></td>
                         <td class="p-2.5 text-slate-500 text-[11px]">${displayMethod}</td>
                         <td class="p-2.5 text-right font-bold text-emerald-600">₹${exp.amount.toFixed(2)}</td>
                     </tr>
